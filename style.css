@@ -1,0 +1,330 @@
+/* CORE */
+html{
+    font-family: 'Source Sans Pro', sans-serif; 
+    background-color: black; 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500; 
+}
+
+
+/* LINKS */
+a:link {
+    color: #FAA832; 
+    text-decoration: none; 
+}
+
+a:visited {
+    color: rgb(255, 72, 0); 
+}
+
+a:hover {
+    color: rgb(199, 141, 60);
+}
+
+#header {
+    background-image: url(img/circuitbg.png); 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    padding: 0;
+}
+
+#header .container{
+  width: 100% !important; 
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 8px;
+}
+#header .container::before, #header .container::after{
+  display: none;
+}
+
+#header #logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0px;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: 50px;
+  }
+  #header #logo h1 {
+    font-size: 26px;
+  }
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+.is-sticky #header {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+#nav-menu-container{
+  margin: 2px !important;
+  display: flex ;
+  float: none !important;
+  flex-direction: row;
+  align-items: center;
+  
+}
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 150px;
+}
+
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 2px 0;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  outline: none;
+}
+
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+  color: #FAA832;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(175, 0, 0, 0.08);
+}
+
+h1.home{
+    color: greenyellow; 
+    align-content: center;
+    font-family: 'Inconsolata', monospace;
+}
+h1.jr{
+    color:#FAA832; 
+    text-align: center; 
+}
+h2.home{
+    color: gainsboro; 
+    text-align: center; 
+    font-family: 'Inconsolata', monospace;
+}
+
+h1.why{
+    color: rgb(2, 255, 255); 
+    align-content: center;
+    font-family: 'Inconsolata', monospace;
+}
+h2.why{
+    color: rgb(2, 255, 255); 
+    align-content: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+h1.horario{
+    color: rgb(230, 255, 2); 
+    font-family: 'Inconsolata', monospace;
+    text-align: center; 
+}
+
+h1.faqs{
+    color: rgb(149, 6, 192); 
+    font-family: 'Inconsolata', monospace;
+    text-align: center;   
+}
+
+tr{
+    color: gainsboro; 
+    text-align: center; 
+    font-family: 'Inconsolata', monospace; 
+    font-size: 25px; 
+}
+
+
+/* CSS GRID */
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat (auto, auto);  
+    grid-gap: 10px;
+    margin: 0 auto;
+    background-image: url(img/circuitbg.png); 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    
+}
+
+.home {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: black;  
+    justify-self: center;
+    margin-top: 25px;  
+
+}
+
+
+.why {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+    color: white; 
+    background-color: black; 
+    margin-top: 25px; 
+
+}
+.horario{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    text-align: center;
+    color: white; 
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (auto, auto);  
+    margin-top: 25px; 
+}
+
+.schtitle{
+    grid-column: 1 / 3;
+    grid-row: 1/ 2;
+    color: white; 
+    background-color: black;
+}
+
+.sab{
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+    color: white; 
+    background-color: black; 
+}
+.dom{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: white; 
+    background-color: black; 
+}
+
+.preguntas{
+    grid-column: 1 / 2;
+    grid-row: 4/ 5;
+    text-align: center;
+ 
+    color: rgb(162, 0, 255); 
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (auto, auto);  
+    margin-top: 25px; 
+}
+p.footer{
+    color: rgb(121, 117, 117); 
+    font-size: 1.2em; 
+}
+
+.fa.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .fa-facebook-square:before {
+    color: #488dd8;
+    background-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(auto,auto); 
+        grid-gap: 10px;
+        margin: 0 auto;
+    }
+    .intro {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-image: url(bg/Fondo-1-PT.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+
+} 
