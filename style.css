@@ -164,13 +164,16 @@ h1.home{
     color: greenyellow; 
     align-content: center;
     font-family: 'Inconsolata', monospace;
+    margin-left: 20%; 
+    margin-right: 20%; 
 }
+
 h1.jr{
     color:#FAA832; 
     text-align: center; 
 }
 h2.home{
-    color: gainsboro; 
+    color: greenyellow;  
     text-align: center; 
     font-family: 'Inconsolata', monospace;
 }
@@ -197,7 +200,10 @@ h1.faqs{
     font-family: 'Inconsolata', monospace;
     text-align: center;   
 }
-
+h1.sponsors{
+    color: orange; 
+    font-family: 'Inconsolata', monospace;
+}
 tr{
     color: gainsboro; 
     text-align: center; 
@@ -225,7 +231,6 @@ tr{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     background-color: black;  
-    justify-self: center;
     margin-top: 25px;  
 
 }
@@ -250,6 +255,8 @@ tr{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat (auto, auto);  
     margin-top: 25px; 
+    margin-left: 5%; 
+    margin-right: 5%; 
 }
 
 .schtitle{
@@ -276,14 +283,63 @@ tr{
     grid-column: 1 / 2;
     grid-row: 4/ 5;
     text-align: center;
- 
-    color: rgb(162, 0, 255); 
     background-color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat (auto, auto);  
     margin-top: 25px; 
 }
+.patrocinadores{
+  grid-column: 1 / 2;
+  grid-row: 5/ 6;
+  text-align: center; 
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat (5, auto);  
+  margin-top: 25px; 
+}
+.sponsorstitle{
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+}
+.elite{
+  grid-column: 1 / 7;
+  grid-row: 2 / 3;
+  justify: center; 
+}
+.gold{
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+  justify: center; 
+}
+.silver{
+  grid-column: 1 / 7;
+  grid-row: 4 / 5;
+  justify: center; 
+}
+.basic{
+  grid-column: 1 / 7;
+  grid-row: 5 / 6;
+  justify: center; 
+}
+
+.register{
+  grid-column: 1 / 2;
+  grid-row: 6/ 7;
+  text-align: center; 
+  background-color: rgb(0, 0, 0); 
+  margin-top: 25px; 
+}
+
+.footer{
+  grid-column: 1 / 2;
+  grid-row: 7/ 8;
+  text-align: center; 
+  background-color: rgb(0, 0, 0); 
+  margin-top: 25px; 
+}
+
 p.footer{
     color: rgb(121, 117, 117); 
     font-size: 1.2em; 
