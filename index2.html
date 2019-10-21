@@ -148,6 +148,30 @@
             height: 150px;
         }
 
+        .schedule .schedule-cont{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .schedule .schedule-cont > div {
+            display: flex;
+            flex-direction: column;
+            flex: 1
+        }
+
+        .schedule .schedule-row{
+            display: flex;
+            padding: 8px;
+        }
+
+        .schedule .schedule-row strong{
+            flex: 1
+        }
+
+        .schedule .schedule-row span{
+            flex: 4
+        }
+
         .section{
             padding: 18px;
             padding-top: 48px;
@@ -274,7 +298,40 @@
 
     <div class="schedule section">
         <h1>Horario</h1>
-        <span class="emphasis1">Sábado 7 de marzo</span>
+
+        <div class="schedule-cont">
+            <div>
+                <span class="emphasis1">Sábado 7 de marzo</span>
+                <div class="schedule-row"> <strong>09:00</strong> <span>Registro</span> </div>
+                <div class="schedule-row"> <strong>10:00</strong> <span>Bienvenida</span> </div>
+                <div class="schedule-row"> <strong>10:15</strong> <span>Feria de patrocinadores</span> </div>
+                <div class="schedule-row"> <strong>11:00</strong> <span>Inicio de proyectos</span> </div>
+                <div class="schedule-row"> <strong>12:30</strong> <span>Pláticas y snacks</span> </div>
+                <div class="schedule-row"> <strong>14:00</strong> <span>Primer entregable</span> </div>
+                <div class="schedule-row"> <strong>14:30</strong> <span>Comida</span> </div>
+                <div class="schedule-row"> <strong>16:30</strong> <span>Talleres</span> </div>
+                <div class="schedule-row"> <strong>18:00</strong> <span>Actividades y snacks</span> </div>
+                <div class="schedule-row"> <strong>19:00</strong> <span>Cena</span> </div>
+                <div class="schedule-row"> <strong>20:30</strong> <span>Q&A</span> </div>
+                <div class="schedule-row"> <strong>21:00</strong> <span>Segundo entregable</span> </div>
+                <div class="schedule-row"> <strong>22:00</strong> <span>Fin del primer día</span> </div>
+            </div>
+            <div>
+                <span class="emphasis1">Domingo 8 de marzo</span>
+                <div class="schedule-row"> <strong>09:00</strong> <span>Registro</span> </div>
+                <div class="schedule-row"> <strong>10:00</strong> <span>Desayuno</span> </div>
+                <div class="schedule-row"> <strong>11:30</strong> <span>Cómo hacer un pitch</span> </div>
+                <div class="schedule-row"> <strong>13:00</strong> <span>Feria de carreras</span> </div>
+                <div class="schedule-row"> <strong>14:30</strong> <span>Comida</span> </div>
+                <div class="schedule-row"> <strong>16:30</strong> <span>Pitch de los equipos</span> </div>
+                <div class="schedule-row"> <strong>18:00</strong> <span>Foto grupal</span> </div>
+                <div class="schedule-row"> <strong>18:30</strong> <span>Premiación y despedida</span> </div>
+            </div>
+        </div>
+
+
+        
+
         
     </div>
 
